@@ -23,9 +23,6 @@ class MyMapSampleState extends State<MyMap> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: AppBar(
-        title: Text("Prueba"),
-      ),
       body: GoogleMap(
         mapType: MapType.normal,
         initialCameraPosition: CameraPosition(
@@ -37,11 +34,12 @@ class MyMapSampleState extends State<MyMap> {
           elevation: 10.0,
           child: Icon(Icons.add),
           onPressed: (){},
-          backgroundColor: Colors.green,
+          backgroundColor: Colors.lightBlue[200],
         ),
       bottomNavigationBar: BottomAppBar(
         child: Container(height: 50.0),
-        color: Colors.blue,
+        color: Colors.white,
+        shape: CircularNotchedRectangle(),
       ),
       floatingActionButtonLocation: (
         FloatingActionButtonLocation.centerDocked
