@@ -37,13 +37,22 @@ class MyMapSampleState extends State<MyMap> {
           backgroundColor: Colors.lightBlue[200],
         ),
       bottomNavigationBar: BottomAppBar(
-        child: Container(height: 50.0),
+        child: new Row(
+          mainAxisSize: MainAxisSize.max,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: <Widget>[
+            IconButton(icon: Icon(Icons.menu), onPressed: () {},),
+            IconButton(icon: Icon(Icons.search), onPressed: () {},),
+          ],
+        ),
         color: Colors.white,
         shape: CircularNotchedRectangle(),
+        
       ),
       floatingActionButtonLocation: (
         FloatingActionButtonLocation.centerDocked
       ),
+      
       );
     }
   }
